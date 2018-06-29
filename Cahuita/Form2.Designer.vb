@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class Registro
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -37,7 +37,6 @@ Partial Class Form2
         Me.lblFechaDeNacimiento = New System.Windows.Forms.Label()
         Me.lblCorreo = New System.Windows.Forms.Label()
         Me.lblApellidos = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -177,16 +176,6 @@ Partial Class Form2
         Me.lblApellidos.TabIndex = 17
         Me.lblApellidos.Text = "Apellidos:"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(232, -18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 22)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Nombre:"
-        '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
@@ -197,11 +186,11 @@ Partial Class Form2
         Me.lblNombre.TabIndex = 32
         Me.lblNombre.Text = "Nombre:"
         '
-        'Form2
+        'Registro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 606)
+        Me.ClientSize = New System.Drawing.Size(867, 606)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.btnRegistrarse)
         Me.Controls.Add(Me.btnCancelar)
@@ -218,8 +207,7 @@ Partial Class Form2
         Me.Controls.Add(Me.lblFechaDeNacimiento)
         Me.Controls.Add(Me.lblCorreo)
         Me.Controls.Add(Me.lblApellidos)
-        Me.Controls.Add(Me.Label1)
-        Me.Name = "Form2"
+        Me.Name = "Registro"
         Me.Text = "Registro"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -241,6 +229,5 @@ Partial Class Form2
     Friend WithEvents lblFechaDeNacimiento As Label
     Friend WithEvents lblCorreo As Label
     Friend WithEvents lblApellidos As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents lblNombre As Label
 End Class
