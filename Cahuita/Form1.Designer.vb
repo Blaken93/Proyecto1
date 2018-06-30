@@ -76,6 +76,7 @@ Partial Class Form1
         Me.tbContraseña.Location = New System.Drawing.Point(259, 255)
         Me.tbContraseña.Multiline = True
         Me.tbContraseña.Name = "tbContraseña"
+        Me.tbContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbContraseña.Size = New System.Drawing.Size(234, 20)
         Me.tbContraseña.TabIndex = 5
         '
