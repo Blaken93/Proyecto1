@@ -27,7 +27,6 @@ Partial Class Registro
         Me.tbVerificarContraseña = New System.Windows.Forms.TextBox()
         Me.tbContraseña = New System.Windows.Forms.TextBox()
         Me.tbID = New System.Windows.Forms.TextBox()
-        Me.tbFechaDeNacimiento = New System.Windows.Forms.TextBox()
         Me.tbCorreo = New System.Windows.Forms.TextBox()
         Me.tbApellidos = New System.Windows.Forms.TextBox()
         Me.tbNombre = New System.Windows.Forms.TextBox()
@@ -38,6 +37,7 @@ Partial Class Registro
         Me.lblCorreo = New System.Windows.Forms.Label()
         Me.lblApellidos = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
+        Me.DpFechaDeNacimineto = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'btnRegistrarse
@@ -83,14 +83,6 @@ Partial Class Registro
         Me.tbID.Name = "tbID"
         Me.tbID.Size = New System.Drawing.Size(240, 25)
         Me.tbID.TabIndex = 27
-        '
-        'tbFechaDeNacimiento
-        '
-        Me.tbFechaDeNacimiento.Location = New System.Drawing.Point(236, 232)
-        Me.tbFechaDeNacimiento.Multiline = True
-        Me.tbFechaDeNacimiento.Name = "tbFechaDeNacimiento"
-        Me.tbFechaDeNacimiento.Size = New System.Drawing.Size(240, 25)
-        Me.tbFechaDeNacimiento.TabIndex = 26
         '
         'tbCorreo
         '
@@ -186,18 +178,25 @@ Partial Class Registro
         Me.lblNombre.TabIndex = 32
         Me.lblNombre.Text = "Nombre:"
         '
+        'DpFechaDeNacimineto
+        '
+        Me.DpFechaDeNacimineto.Location = New System.Drawing.Point(236, 232)
+        Me.DpFechaDeNacimineto.Name = "DpFechaDeNacimineto"
+        Me.DpFechaDeNacimineto.Size = New System.Drawing.Size(240, 20)
+        Me.DpFechaDeNacimineto.TabIndex = 33
+        '
         'Registro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 606)
+        Me.Controls.Add(Me.DpFechaDeNacimineto)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.btnRegistrarse)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.tbVerificarContraseña)
         Me.Controls.Add(Me.tbContraseña)
         Me.Controls.Add(Me.tbID)
-        Me.Controls.Add(Me.tbFechaDeNacimiento)
         Me.Controls.Add(Me.tbCorreo)
         Me.Controls.Add(Me.tbApellidos)
         Me.Controls.Add(Me.tbNombre)
@@ -219,7 +218,6 @@ Partial Class Registro
     Friend WithEvents tbVerificarContraseña As TextBox
     Friend WithEvents tbContraseña As TextBox
     Friend WithEvents tbID As TextBox
-    Friend WithEvents tbFechaDeNacimiento As TextBox
     Friend WithEvents tbCorreo As TextBox
     Friend WithEvents tbApellidos As TextBox
     Friend WithEvents tbNombre As TextBox
@@ -230,4 +228,5 @@ Partial Class Registro
     Friend WithEvents lblCorreo As Label
     Friend WithEvents lblApellidos As Label
     Friend WithEvents lblNombre As Label
+    Friend WithEvents DpFechaDeNacimineto As DateTimePicker
 End Class
