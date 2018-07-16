@@ -1,0 +1,22 @@
+USE [CAHUITA]
+GO
+
+/****** Object:  Table [dbo].[USUARIOS]    Script Date: 2/7/2018 11:10:09 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[USUARIOS](
+	[tipo] [varchar](15) NULL,
+	[usuario] [varchar](45) NOT NULL,
+	[contrasena] [varchar](40) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[usuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
