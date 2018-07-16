@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Login
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
 
     End Sub
