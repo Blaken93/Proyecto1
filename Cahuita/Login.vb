@@ -1,10 +1,14 @@
-﻿Public Class Form1
+﻿Public Class Login
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
-        Dim admin As String
-        Dim pass As String
-        admin = "Admin"
-        pass = "12345"
-        If tbUsuario.Text = admin And tbContraseña.Text = pass Then
+        Dim conexion As New SqlClient.SqlConnection(servidor_datos)
+
+        Dim Sql As Boolean = "Select * from USUARIOS where usuario = '" + tbUsuario.Text + "' And contrasena = '" + tbContraseña.Text + "'"
+
+        Dim comando As New SqlClient.SqlCommand(SQL, conexion)
+        conexion.Open()
+        comando.ExecuteNonQuery()
+
+        If Sql = True Then
             MessageBox.Show("Acceso permitido")
         Else
             MessageBox.Show("Acceso denegado")
