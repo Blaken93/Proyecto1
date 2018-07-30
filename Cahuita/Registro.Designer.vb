@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form4
+Partial Class Registro
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,20 +28,20 @@ Partial Class Form4
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(310, 42)
+        Me.Label1.Location = New System.Drawing.Point(302, 52)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Desbloquear cuenta"
+        Me.Label1.Size = New System.Drawing.Size(67, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "crear cuenta"
         '
-        'Form4
+        'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 565)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form4"
-        Me.Text = "Form4"
+        Me.Name = "Form2"
+        Me.Text = "Form2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
