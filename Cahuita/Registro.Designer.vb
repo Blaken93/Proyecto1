@@ -111,70 +111,70 @@ Partial Class Registro
         'lblVerificarContraseña
         '
         Me.lblVerificarContraseña.AutoSize = True
-        Me.lblVerificarContraseña.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVerificarContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblVerificarContraseña.Location = New System.Drawing.Point(232, 395)
         Me.lblVerificarContraseña.Name = "lblVerificarContraseña"
-        Me.lblVerificarContraseña.Size = New System.Drawing.Size(177, 18)
+        Me.lblVerificarContraseña.Size = New System.Drawing.Size(155, 20)
         Me.lblVerificarContraseña.TabIndex = 22
         Me.lblVerificarContraseña.Text = "Verificar contraseña:"
         '
         'lblContraseña
         '
         Me.lblContraseña.AutoSize = True
-        Me.lblContraseña.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblContraseña.Location = New System.Drawing.Point(232, 332)
         Me.lblContraseña.Name = "lblContraseña"
-        Me.lblContraseña.Size = New System.Drawing.Size(107, 18)
+        Me.lblContraseña.Size = New System.Drawing.Size(96, 20)
         Me.lblContraseña.TabIndex = 21
         Me.lblContraseña.Text = "Contraseña:"
         '
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblID.Location = New System.Drawing.Point(232, 270)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(30, 18)
+        Me.lblID.Size = New System.Drawing.Size(30, 20)
         Me.lblID.TabIndex = 20
         Me.lblID.Text = "ID:"
         '
         'lblFechaDeNacimiento
         '
         Me.lblFechaDeNacimiento.AutoSize = True
-        Me.lblFechaDeNacimiento.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaDeNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFechaDeNacimiento.Location = New System.Drawing.Point(233, 211)
         Me.lblFechaDeNacimiento.Name = "lblFechaDeNacimiento"
-        Me.lblFechaDeNacimiento.Size = New System.Drawing.Size(179, 18)
+        Me.lblFechaDeNacimiento.Size = New System.Drawing.Size(161, 20)
         Me.lblFechaDeNacimiento.TabIndex = 19
         Me.lblFechaDeNacimiento.Text = "Fecha de nacimiento:"
         '
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCorreo.Location = New System.Drawing.Point(233, 144)
         Me.lblCorreo.Name = "lblCorreo"
-        Me.lblCorreo.Size = New System.Drawing.Size(69, 18)
+        Me.lblCorreo.Size = New System.Drawing.Size(61, 20)
         Me.lblCorreo.TabIndex = 18
         Me.lblCorreo.Text = "Correo:"
         '
         'lblApellidos
         '
         Me.lblApellidos.AutoSize = True
-        Me.lblApellidos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblApellidos.Location = New System.Drawing.Point(233, 81)
         Me.lblApellidos.Name = "lblApellidos"
-        Me.lblApellidos.Size = New System.Drawing.Size(86, 18)
+        Me.lblApellidos.Size = New System.Drawing.Size(77, 20)
         Me.lblApellidos.TabIndex = 17
         Me.lblApellidos.Text = "Apellidos:"
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(233, 19)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(76, 18)
+        Me.lblNombre.Size = New System.Drawing.Size(69, 20)
         Me.lblNombre.TabIndex = 32
         Me.lblNombre.Text = "Nombre:"
         '
