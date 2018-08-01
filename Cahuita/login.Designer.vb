@@ -96,33 +96,36 @@ Partial Class login
         '
         'btnOlvidoContraseña
         '
+        Me.btnOlvidoContraseña.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnOlvidoContraseña.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOlvidoContraseña.Location = New System.Drawing.Point(306, 438)
         Me.btnOlvidoContraseña.Name = "btnOlvidoContraseña"
         Me.btnOlvidoContraseña.Size = New System.Drawing.Size(142, 34)
         Me.btnOlvidoContraseña.TabIndex = 7
         Me.btnOlvidoContraseña.Text = "Olvido contraseña"
-        Me.btnOlvidoContraseña.UseVisualStyleBackColor = True
+        Me.btnOlvidoContraseña.UseVisualStyleBackColor = False
         '
         'btnCrearCuenta
         '
+        Me.btnCrearCuenta.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnCrearCuenta.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCrearCuenta.Location = New System.Drawing.Point(306, 404)
         Me.btnCrearCuenta.Name = "btnCrearCuenta"
         Me.btnCrearCuenta.Size = New System.Drawing.Size(142, 28)
         Me.btnCrearCuenta.TabIndex = 8
         Me.btnCrearCuenta.Text = "Crear cuenta"
-        Me.btnCrearCuenta.UseVisualStyleBackColor = True
+        Me.btnCrearCuenta.UseVisualStyleBackColor = False
         '
         'btnDesbloquearCuenta
         '
+        Me.btnDesbloquearCuenta.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnDesbloquearCuenta.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDesbloquearCuenta.Location = New System.Drawing.Point(306, 478)
         Me.btnDesbloquearCuenta.Name = "btnDesbloquearCuenta"
         Me.btnDesbloquearCuenta.Size = New System.Drawing.Size(142, 40)
         Me.btnDesbloquearCuenta.TabIndex = 9
         Me.btnDesbloquearCuenta.Text = "Desbloquear cuenta"
-        Me.btnDesbloquearCuenta.UseVisualStyleBackColor = True
+        Me.btnDesbloquearCuenta.UseVisualStyleBackColor = False
         '
         'UsuariosBindingSource
         '

@@ -42,23 +42,25 @@ Partial Class Registro
         '
         'btnRegistrarse
         '
+        Me.btnRegistrarse.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnRegistrarse.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrarse.Location = New System.Drawing.Point(391, 507)
         Me.btnRegistrarse.Name = "btnRegistrarse"
         Me.btnRegistrarse.Size = New System.Drawing.Size(85, 34)
         Me.btnRegistrarse.TabIndex = 31
         Me.btnRegistrarse.Text = "Registrarse"
-        Me.btnRegistrarse.UseVisualStyleBackColor = True
+        Me.btnRegistrarse.UseVisualStyleBackColor = False
         '
         'btnCancelar
         '
+        Me.btnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnCancelar.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.Location = New System.Drawing.Point(227, 507)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 34)
         Me.btnCancelar.TabIndex = 30
         Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'tbVerificarContraseña
         '
