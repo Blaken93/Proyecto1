@@ -73,11 +73,59 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="baseDatos.vb" />
+    <Compile Include="ContratarEmpleados.Designer.vb">
+      <DependentUpon>ContratarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContratarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinutasDeSeguimiento.Designer.vb">
+      <DependentUpon>MinutasDeSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MinutasDeSeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitarPrueba.Designer.vb">
+      <DependentUpon>SolicitarPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SolicitarPrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historial.Designer.vb">
+      <DependentUpon>Historial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Historial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil.Designer.vb">
+      <DependentUpon>Perfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pruebas.Designer.vb">
+      <DependentUpon>Pruebas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pruebas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar candidato.Designer.vb">
+      <DependentUpon>Modificar candidato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar candidato.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menú.Designer.vb">
+      <DependentUpon>Menú.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menú.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OlvidoContrasena.Designer.vb">
@@ -120,8 +168,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ContratarEmpleados.resx">
+      <DependentUpon>ContratarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinutasDeSeguimiento.resx">
+      <DependentUpon>MinutasDeSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitarPrueba.resx">
+      <DependentUpon>SolicitarPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historial.resx">
+      <DependentUpon>Historial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pruebas.resx">
+      <DependentUpon>Pruebas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar candidato.resx">
+      <DependentUpon>Modificar candidato.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menú.resx">
+      <DependentUpon>Menú.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OlvidoContrasena.resx">
       <DependentUpon>OlvidoContrasena.vb</DependentUpon>
