@@ -122,10 +122,10 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menú.Designer.vb">
-      <DependentUpon>Menú.vb</DependentUpon>
+    <Compile Include="UserMenu.Designer.vb">
+      <DependentUpon>UserMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Menú.vb">
+    <Compile Include="UserMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OlvidoContrasena.Designer.vb">
@@ -192,8 +192,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menú.resx">
-      <DependentUpon>Menú.vb</DependentUpon>
+    <EmbeddedResource Include="UserMenu.resx">
+      <DependentUpon>UserMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OlvidoContrasena.resx">
       <DependentUpon>OlvidoContrasena.vb</DependentUpon>

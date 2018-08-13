@@ -1,12 +1,22 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class login
+    Public usuario As String
+
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
-        If validarUsuario(tbUsuario.Text, tbContraseña.Text) Then
-            MessageBox.Show("Acceso permitido")
-        Else
-            MessageBox.Show("Acceso denegado")
-        End If
+        Try
+            If validarUsuario(tbUsuario.Text, tbContraseña.Text) Then
+                MessageBox.Show("Acceso permitido")
+                usuario = tbUsuario.Text
+                UserMenu.Show()
+            Else
+                MessageBox.Show("Acceso denegado")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error al conectar con el servidor")
+
+        End Try
+
 
     End Sub
 
@@ -16,7 +26,7 @@ Public Class login
         conexion.ConnectionString = servidor_datos
         conexion.Open()
         Dim instruccionSQL As String
-        instruccionSQL = "select * from USUARIOS where correo='" + email + "' and contrasena='" + contrasena + "'"
+        instruccionSQL = "select * from EMPLEADOS where correo='" + email + "' and contrasena='" + contrasena + "'"
 
         Dim myCommand As New SqlCommand(instruccionSQL, conexion)
         Dim myReader As SqlDataReader = myCommand.ExecuteReader()
@@ -33,7 +43,6 @@ Public Class login
 
     Private Sub btnDesbloquearCuenta_Click(sender As Object, e As EventArgs) Handles btnDesbloquearCuenta.Click
         DesbloquearCuenta.Show()
-
     End Sub
 
     Private Sub btnOlvidoContraseña_Click(sender As Object, e As EventArgs) Handles btnOlvidoContraseña.Click

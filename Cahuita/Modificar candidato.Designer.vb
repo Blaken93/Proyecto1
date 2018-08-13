@@ -40,7 +40,7 @@ Partial Class ModificarCandidato
         Me.btnAgendarEntrevista = New System.Windows.Forms.Button()
         Me.btnAprobarCandidato = New System.Windows.Forms.Button()
         Me.btnRegistrarComentarios = New System.Windows.Forms.Button()
-        Me.lbCandidatos = New System.Windows.Forms.ListBox()
+        Me.clbCandidatos = New System.Windows.Forms.CheckedListBox()
         Me.SuspendLayout()
         '
         'tbID
@@ -54,70 +54,70 @@ Partial Class ModificarCandidato
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblID.Location = New System.Drawing.Point(21, 12)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(30, 18)
+        Me.lblID.Size = New System.Drawing.Size(30, 20)
         Me.lblID.TabIndex = 1
         Me.lblID.Text = "ID:"
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNombre.Location = New System.Drawing.Point(2, 42)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(76, 18)
+        Me.lblNombre.Size = New System.Drawing.Size(69, 20)
         Me.lblNombre.TabIndex = 2
         Me.lblNombre.Text = "Nombre:"
         '
         'lblApellidos
         '
         Me.lblApellidos.AutoSize = True
-        Me.lblApellidos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblApellidos.Location = New System.Drawing.Point(2, 73)
         Me.lblApellidos.Name = "lblApellidos"
-        Me.lblApellidos.Size = New System.Drawing.Size(86, 18)
+        Me.lblApellidos.Size = New System.Drawing.Size(77, 20)
         Me.lblApellidos.TabIndex = 3
         Me.lblApellidos.Text = "Apellidos:"
         '
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCorreo.Location = New System.Drawing.Point(2, 103)
         Me.lblCorreo.Name = "lblCorreo"
-        Me.lblCorreo.Size = New System.Drawing.Size(69, 18)
+        Me.lblCorreo.Size = New System.Drawing.Size(61, 20)
         Me.lblCorreo.TabIndex = 4
         Me.lblCorreo.Text = "Correo:"
         '
         'lblEstado
         '
         Me.lblEstado.AutoSize = True
-        Me.lblEstado.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEstado.Location = New System.Drawing.Point(2, 138)
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(69, 18)
+        Me.lblEstado.Size = New System.Drawing.Size(64, 20)
         Me.lblEstado.TabIndex = 5
         Me.lblEstado.Text = "Estado:"
         '
         'lblComentarios
         '
         Me.lblComentarios.AutoSize = True
-        Me.lblComentarios.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblComentarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComentarios.Location = New System.Drawing.Point(2, 171)
         Me.lblComentarios.Name = "lblComentarios"
-        Me.lblComentarios.Size = New System.Drawing.Size(115, 18)
+        Me.lblComentarios.Size = New System.Drawing.Size(103, 20)
         Me.lblComentarios.TabIndex = 6
         Me.lblComentarios.Text = "Comentarios:"
         '
         'lblAgendarEntrevista
         '
         Me.lblAgendarEntrevista.AutoSize = True
-        Me.lblAgendarEntrevista.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgendarEntrevista.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAgendarEntrevista.Location = New System.Drawing.Point(2, 310)
         Me.lblAgendarEntrevista.Name = "lblAgendarEntrevista"
-        Me.lblAgendarEntrevista.Size = New System.Drawing.Size(167, 18)
+        Me.lblAgendarEntrevista.Size = New System.Drawing.Size(147, 20)
         Me.lblAgendarEntrevista.TabIndex = 7
         Me.lblAgendarEntrevista.Text = "Agendar entrevista:"
         '
@@ -212,20 +212,20 @@ Partial Class ModificarCandidato
         Me.btnRegistrarComentarios.Text = "Registrar comentarios"
         Me.btnRegistrarComentarios.UseVisualStyleBackColor = False
         '
-        'lbCandidatos
+        'clbCandidatos
         '
-        Me.lbCandidatos.FormattingEnabled = True
-        Me.lbCandidatos.Location = New System.Drawing.Point(330, 12)
-        Me.lbCandidatos.Name = "lbCandidatos"
-        Me.lbCandidatos.Size = New System.Drawing.Size(494, 277)
-        Me.lbCandidatos.TabIndex = 19
+        Me.clbCandidatos.FormattingEnabled = True
+        Me.clbCandidatos.Location = New System.Drawing.Point(312, 7)
+        Me.clbCandidatos.Name = "clbCandidatos"
+        Me.clbCandidatos.Size = New System.Drawing.Size(487, 259)
+        Me.clbCandidatos.TabIndex = 19
         '
         'ModificarCandidato
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 512)
-        Me.Controls.Add(Me.lbCandidatos)
+        Me.Controls.Add(Me.clbCandidatos)
         Me.Controls.Add(Me.btnRegistrarComentarios)
         Me.Controls.Add(Me.btnAprobarCandidato)
         Me.Controls.Add(Me.btnAgendarEntrevista)
@@ -269,5 +269,5 @@ Partial Class ModificarCandidato
     Friend WithEvents btnAgendarEntrevista As Button
     Friend WithEvents btnAprobarCandidato As Button
     Friend WithEvents btnRegistrarComentarios As Button
-    Friend WithEvents lbCandidatos As ListBox
+    Friend WithEvents clbCandidatos As CheckedListBox
 End Class

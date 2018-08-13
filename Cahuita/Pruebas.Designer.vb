@@ -34,20 +34,20 @@ Partial Class Pruebas
         'lblAgendarPrueba
         '
         Me.lblAgendarPrueba.AutoSize = True
-        Me.lblAgendarPrueba.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAgendarPrueba.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAgendarPrueba.Location = New System.Drawing.Point(3, 9)
         Me.lblAgendarPrueba.Name = "lblAgendarPrueba"
-        Me.lblAgendarPrueba.Size = New System.Drawing.Size(143, 18)
+        Me.lblAgendarPrueba.Size = New System.Drawing.Size(128, 20)
         Me.lblAgendarPrueba.TabIndex = 0
         Me.lblAgendarPrueba.Text = "Agendar prueba:"
         '
         'lblRegistrarNotas
         '
         Me.lblRegistrarNotas.AutoSize = True
-        Me.lblRegistrarNotas.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRegistrarNotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRegistrarNotas.Location = New System.Drawing.Point(3, 186)
         Me.lblRegistrarNotas.Name = "lblRegistrarNotas"
-        Me.lblRegistrarNotas.Size = New System.Drawing.Size(137, 18)
+        Me.lblRegistrarNotas.Size = New System.Drawing.Size(122, 20)
         Me.lblRegistrarNotas.TabIndex = 1
         Me.lblRegistrarNotas.Text = "Registrar notas:"
         '
