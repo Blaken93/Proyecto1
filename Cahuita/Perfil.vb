@@ -10,4 +10,8 @@
     Private Sub Label8_Click(sender As Object, e As EventArgs) Handles lblApellidosDatos.Click
 
     End Sub
+
+    Private Sub btnRegresarAlMenuPrincipal_Click(sender As Object, e As EventArgs) Handles btnRegresarAlMenuPrincipal.Click
+        Me.Close()
+    End Sub
 End Class

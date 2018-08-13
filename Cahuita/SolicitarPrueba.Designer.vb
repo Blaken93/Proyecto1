@@ -49,10 +49,10 @@ Partial Class SolicitarPrueba
         'lblSolicitarPrueba
         '
         Me.lblSolicitarPrueba.AutoSize = True
-        Me.lblSolicitarPrueba.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSolicitarPrueba.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSolicitarPrueba.Location = New System.Drawing.Point(12, 9)
         Me.lblSolicitarPrueba.Name = "lblSolicitarPrueba"
-        Me.lblSolicitarPrueba.Size = New System.Drawing.Size(140, 18)
+        Me.lblSolicitarPrueba.Size = New System.Drawing.Size(123, 20)
         Me.lblSolicitarPrueba.TabIndex = 6
         Me.lblSolicitarPrueba.Text = "Solicitar prueba:"
         '

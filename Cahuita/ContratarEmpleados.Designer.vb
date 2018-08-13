@@ -25,16 +25,16 @@ Partial Class ContratarEmpleados
         Me.lblLista = New System.Windows.Forms.Label()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnContratarEmpleado = New System.Windows.Forms.Button()
-        Me.lbEmpleados = New System.Windows.Forms.ListBox()
+        Me.clbEmpleados = New System.Windows.Forms.CheckedListBox()
         Me.SuspendLayout()
         '
         'lblLista
         '
         Me.lblLista.AutoSize = True
-        Me.lblLista.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLista.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLista.Location = New System.Drawing.Point(13, 13)
         Me.lblLista.Name = "lblLista"
-        Me.lblLista.Size = New System.Drawing.Size(60, 22)
+        Me.lblLista.Size = New System.Drawing.Size(52, 24)
         Me.lblLista.TabIndex = 0
         Me.lblLista.Text = "Lista:"
         '
@@ -60,20 +60,20 @@ Partial Class ContratarEmpleados
         Me.btnContratarEmpleado.Text = "Contratar empleado"
         Me.btnContratarEmpleado.UseVisualStyleBackColor = False
         '
-        'lbEmpleados
+        'clbEmpleados
         '
-        Me.lbEmpleados.FormattingEnabled = True
-        Me.lbEmpleados.Location = New System.Drawing.Point(73, 39)
-        Me.lbEmpleados.Name = "lbEmpleados"
-        Me.lbEmpleados.Size = New System.Drawing.Size(573, 277)
-        Me.lbEmpleados.TabIndex = 4
+        Me.clbEmpleados.FormattingEnabled = True
+        Me.clbEmpleados.Location = New System.Drawing.Point(81, 47)
+        Me.clbEmpleados.Name = "clbEmpleados"
+        Me.clbEmpleados.Size = New System.Drawing.Size(487, 259)
+        Me.clbEmpleados.TabIndex = 5
         '
         'ContratarEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lbEmpleados)
+        Me.Controls.Add(Me.clbEmpleados)
         Me.Controls.Add(Me.btnContratarEmpleado)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.lblLista)
@@ -87,5 +87,5 @@ Partial Class ContratarEmpleados
     Friend WithEvents lblLista As Label
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnContratarEmpleado As Button
-    Friend WithEvents lbEmpleados As ListBox
+    Friend WithEvents clbEmpleados As CheckedListBox
 End Class
