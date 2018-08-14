@@ -40,7 +40,8 @@ Partial Class ModificarCandidato
         Me.btnAgendarEntrevista = New System.Windows.Forms.Button()
         Me.btnAprobarCandidato = New System.Windows.Forms.Button()
         Me.btnRegistrarComentarios = New System.Windows.Forms.Button()
-        Me.clbCandidatos = New System.Windows.Forms.CheckedListBox()
+        Me.dgvCandidatos = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvCandidatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbID
@@ -212,20 +213,25 @@ Partial Class ModificarCandidato
         Me.btnRegistrarComentarios.Text = "Registrar comentarios"
         Me.btnRegistrarComentarios.UseVisualStyleBackColor = False
         '
-        'clbCandidatos
+        'dgvCandidatos
         '
-        Me.clbCandidatos.FormattingEnabled = True
-        Me.clbCandidatos.Location = New System.Drawing.Point(312, 7)
-        Me.clbCandidatos.Name = "clbCandidatos"
-        Me.clbCandidatos.Size = New System.Drawing.Size(487, 259)
-        Me.clbCandidatos.TabIndex = 19
+        Me.dgvCandidatos.AllowUserToAddRows = False
+        Me.dgvCandidatos.AllowUserToDeleteRows = False
+        Me.dgvCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCandidatos.Location = New System.Drawing.Point(322, 7)
+        Me.dgvCandidatos.MultiSelect = False
+        Me.dgvCandidatos.Name = "dgvCandidatos"
+        Me.dgvCandidatos.ReadOnly = True
+        Me.dgvCandidatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCandidatos.Size = New System.Drawing.Size(478, 378)
+        Me.dgvCandidatos.TabIndex = 19
         '
         'ModificarCandidato
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 512)
-        Me.Controls.Add(Me.clbCandidatos)
+        Me.Controls.Add(Me.dgvCandidatos)
         Me.Controls.Add(Me.btnRegistrarComentarios)
         Me.Controls.Add(Me.btnAprobarCandidato)
         Me.Controls.Add(Me.btnAgendarEntrevista)
@@ -246,6 +252,7 @@ Partial Class ModificarCandidato
         Me.Controls.Add(Me.tbID)
         Me.Name = "ModificarCandidato"
         Me.Text = "Modificar candidato"
+        CType(Me.dgvCandidatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -269,5 +276,5 @@ Partial Class ModificarCandidato
     Friend WithEvents btnAgendarEntrevista As Button
     Friend WithEvents btnAprobarCandidato As Button
     Friend WithEvents btnRegistrarComentarios As Button
-    Friend WithEvents clbCandidatos As CheckedListBox
+    Friend WithEvents dgvCandidatos As DataGridView
 End Class

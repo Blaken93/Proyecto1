@@ -25,7 +25,6 @@ Partial Class UserMenu
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CandidatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarCandidatoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgendarPruebaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RecursosHumanosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MinutosDeSeguimientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,7 +47,7 @@ Partial Class UserMenu
         '
         'CandidatosToolStripMenuItem
         '
-        Me.CandidatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarCandidatoToolStripMenuItem, Me.AgendarPruebaToolStripMenuItem})
+        Me.CandidatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarCandidatoToolStripMenuItem})
         Me.CandidatosToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CandidatosToolStripMenuItem.Name = "CandidatosToolStripMenuItem"
         Me.CandidatosToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
@@ -59,12 +58,6 @@ Partial Class UserMenu
         Me.ModificarCandidatoToolStripMenuItem.Name = "ModificarCandidatoToolStripMenuItem"
         Me.ModificarCandidatoToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.ModificarCandidatoToolStripMenuItem.Text = "Modificar candidato "
-        '
-        'AgendarPruebaToolStripMenuItem
-        '
-        Me.AgendarPruebaToolStripMenuItem.Name = "AgendarPruebaToolStripMenuItem"
-        Me.AgendarPruebaToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.AgendarPruebaToolStripMenuItem.Text = "Agendar prueba"
         '
         'RecursosHumanosToolStripMenuItem
         '
@@ -97,19 +90,19 @@ Partial Class UserMenu
         'MiPerfilToolStripMenuItem
         '
         Me.MiPerfilToolStripMenuItem.Name = "MiPerfilToolStripMenuItem"
-        Me.MiPerfilToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MiPerfilToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.MiPerfilToolStripMenuItem.Text = "Mi perfil"
         '
         'MiHistorialToolStripMenuItem
         '
         Me.MiHistorialToolStripMenuItem.Name = "MiHistorialToolStripMenuItem"
-        Me.MiHistorialToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MiHistorialToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.MiHistorialToolStripMenuItem.Text = "Mi historial"
         '
         'SolicitarPruebaToolStripMenuItem
         '
         Me.SolicitarPruebaToolStripMenuItem.Name = "SolicitarPruebaToolStripMenuItem"
-        Me.SolicitarPruebaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SolicitarPruebaToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.SolicitarPruebaToolStripMenuItem.Text = "Solicitar prueba"
         '
         'SalirToolStripMenuItem
@@ -138,7 +131,6 @@ Partial Class UserMenu
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents CandidatosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ModificarCandidatoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AgendarPruebaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RecursosHumanosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PerfilToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
