@@ -7,7 +7,7 @@
         ModificarCandidato.Show()
     End Sub
 
-    Private Sub AgendarPruebaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgendarPruebaToolStripMenuItem.Click
+    Private Sub AgendarPruebaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         SolicitarPrueba.Show()
     End Sub
 
