@@ -218,12 +218,12 @@ Partial Class ModificarCandidato
         Me.dgvCandidatos.AllowUserToAddRows = False
         Me.dgvCandidatos.AllowUserToDeleteRows = False
         Me.dgvCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCandidatos.Location = New System.Drawing.Point(322, 7)
+        Me.dgvCandidatos.Location = New System.Drawing.Point(299, 7)
         Me.dgvCandidatos.MultiSelect = False
         Me.dgvCandidatos.Name = "dgvCandidatos"
         Me.dgvCandidatos.ReadOnly = True
         Me.dgvCandidatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvCandidatos.Size = New System.Drawing.Size(478, 378)
+        Me.dgvCandidatos.Size = New System.Drawing.Size(551, 378)
         Me.dgvCandidatos.TabIndex = 19
         '
         'ModificarCandidato
