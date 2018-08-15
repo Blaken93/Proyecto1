@@ -15,7 +15,7 @@
         instruccionSQL = "INSERT INTO EMPLEADOS (NOMBRE,APELLIDO,DIRECCION,CORREO,PROVINCIA,CONTRASENA,FECHA_NACIMIENTO,TIPO) VALUES ('1?','2?','3?','4?','5?','6?','7?','8?')"
         instruccionSQL = instruccionSQL.Replace("1?", tbNombre.Text)
         instruccionSQL = instruccionSQL.Replace("2?", tbApellidos.Text)
-        instruccionSQL = instruccionSQL.Replace("3?", "NONE")
+        instruccionSQL = instruccionSQL.Replace("3?", tbID.Text)
         instruccionSQL = instruccionSQL.Replace("4?", tbCorreo.Text)
         instruccionSQL = instruccionSQL.Replace("5?", "none")
         instruccionSQL = instruccionSQL.Replace("6?", tbContraseña.Text)
@@ -25,6 +25,7 @@
         Dim comando As New SqlClient.SqlCommand(instruccionSQL, conexion)
         conexion.Open()
         comando.ExecuteNonQuery()
+        conexion.Close()
     End Function
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click

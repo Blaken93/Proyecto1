@@ -136,9 +136,9 @@ Partial Class Registro
         Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblID.Location = New System.Drawing.Point(232, 270)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(30, 20)
+        Me.lblID.Size = New System.Drawing.Size(79, 20)
         Me.lblID.TabIndex = 20
-        Me.lblID.Text = "ID:"
+        Me.lblID.Text = "Direccion:"
         '
         'lblFechaDeNacimiento
         '
