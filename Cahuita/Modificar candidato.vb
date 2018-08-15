@@ -64,7 +64,7 @@
         Dim adaptador As SqlClient.SqlDataAdapter
         Dim set_de_datos As New DataSet()
         Dim instruccionSQL As String
-        instruccionSQL = "Select c.id as Id, c.nombre as Nombre, c.apellidos as Apellidos, c.correo as Correo, e.descripcion as Estado  from candidatos c join estadoscandidatos e on (e.id = c.estado)"
+        instruccionSQL = "Select c.id as Id, c.nombre as Nombre, c.apellidos as Apellidos, c.correo as Correo, e.descripcion as Estado  from candidatos c join estadoscandidatos e on (e.id = c.estado and e.id!=3 )"
         'Ejecuta instruccion de consulta - muestra todos los candidatos
         dgvCandidatos.DataSource = ""
         adaptador = New SqlClient.SqlDataAdapter(instruccionSQL, conexion)
