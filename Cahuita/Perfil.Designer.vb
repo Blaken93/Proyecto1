@@ -34,7 +34,7 @@ Partial Class Perfil
         Me.lblFechaDeNacimientoDatos = New System.Windows.Forms.Label()
         Me.lblCorreoDatos = New System.Windows.Forms.Label()
         Me.lblIDDatos = New System.Windows.Forms.Label()
-        Me.lblTelefonoDatos = New System.Windows.Forms.Label()
+        Me.lblDireccionDatos = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnRegresarAlMenuPrincipal = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,9 +96,9 @@ Partial Class Perfil
         Me.lblTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTelefono.Location = New System.Drawing.Point(7, 191)
         Me.lblTelefono.Name = "lblTelefono"
-        Me.lblTelefono.Size = New System.Drawing.Size(75, 20)
+        Me.lblTelefono.Size = New System.Drawing.Size(79, 20)
         Me.lblTelefono.TabIndex = 5
-        Me.lblTelefono.Text = "Teléfono:"
+        Me.lblTelefono.Text = "Direccion:"
         '
         'lblNombreDatos
         '
@@ -145,14 +145,14 @@ Partial Class Perfil
         Me.lblIDDatos.TabIndex = 10
         Me.lblIDDatos.Text = "Label11"
         '
-        'lblTelefonoDatos
+        'lblDireccionDatos
         '
-        Me.lblTelefonoDatos.AutoSize = True
-        Me.lblTelefonoDatos.Location = New System.Drawing.Point(95, 196)
-        Me.lblTelefonoDatos.Name = "lblTelefonoDatos"
-        Me.lblTelefonoDatos.Size = New System.Drawing.Size(45, 13)
-        Me.lblTelefonoDatos.TabIndex = 11
-        Me.lblTelefonoDatos.Text = "Label12"
+        Me.lblDireccionDatos.AutoSize = True
+        Me.lblDireccionDatos.Location = New System.Drawing.Point(95, 196)
+        Me.lblDireccionDatos.Name = "lblDireccionDatos"
+        Me.lblDireccionDatos.Size = New System.Drawing.Size(45, 13)
+        Me.lblDireccionDatos.TabIndex = 11
+        Me.lblDireccionDatos.Text = "Label12"
         '
         'PictureBox1
         '
@@ -181,7 +181,7 @@ Partial Class Perfil
         Me.ClientSize = New System.Drawing.Size(573, 344)
         Me.Controls.Add(Me.btnRegresarAlMenuPrincipal)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.lblTelefonoDatos)
+        Me.Controls.Add(Me.lblDireccionDatos)
         Me.Controls.Add(Me.lblIDDatos)
         Me.Controls.Add(Me.lblCorreoDatos)
         Me.Controls.Add(Me.lblFechaDeNacimientoDatos)
@@ -212,7 +212,7 @@ Partial Class Perfil
     Friend WithEvents lblFechaDeNacimientoDatos As Label
     Friend WithEvents lblCorreoDatos As Label
     Friend WithEvents lblIDDatos As Label
-    Friend WithEvents lblTelefonoDatos As Label
+    Friend WithEvents lblDireccionDatos As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnRegresarAlMenuPrincipal As Button
 End Class

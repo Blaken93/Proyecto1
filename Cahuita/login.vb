@@ -14,7 +14,6 @@ Public Class login
             End If
         Catch ex As Exception
             MessageBox.Show("Error al conectar con el servidor")
-
         End Try
 
 

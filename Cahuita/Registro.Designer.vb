@@ -67,6 +67,7 @@ Partial Class Registro
         Me.tbVerificarContraseña.Location = New System.Drawing.Point(235, 420)
         Me.tbVerificarContraseña.Multiline = True
         Me.tbVerificarContraseña.Name = "tbVerificarContraseña"
+        Me.tbVerificarContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbVerificarContraseña.Size = New System.Drawing.Size(241, 25)
         Me.tbVerificarContraseña.TabIndex = 29
         '
@@ -75,6 +76,7 @@ Partial Class Registro
         Me.tbContraseña.Location = New System.Drawing.Point(236, 357)
         Me.tbContraseña.Multiline = True
         Me.tbContraseña.Name = "tbContraseña"
+        Me.tbContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbContraseña.Size = New System.Drawing.Size(240, 25)
         Me.tbContraseña.TabIndex = 28
         '
@@ -136,9 +138,9 @@ Partial Class Registro
         Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblID.Location = New System.Drawing.Point(232, 270)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(30, 20)
+        Me.lblID.Size = New System.Drawing.Size(79, 20)
         Me.lblID.TabIndex = 20
-        Me.lblID.Text = "ID:"
+        Me.lblID.Text = "Direccion:"
         '
         'lblFechaDeNacimiento
         '

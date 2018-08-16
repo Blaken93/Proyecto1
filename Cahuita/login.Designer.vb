@@ -55,9 +55,9 @@ Partial Class login
         Me.lblUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUsuario.Location = New System.Drawing.Point(330, 121)
         Me.lblUsuario.Name = "lblUsuario"
-        Me.lblUsuario.Size = New System.Drawing.Size(79, 24)
+        Me.lblUsuario.Size = New System.Drawing.Size(62, 24)
         Me.lblUsuario.TabIndex = 1
-        Me.lblUsuario.Text = "Usuario:"
+        Me.lblUsuario.Text = "Email:"
         '
         'tbUsuario
         '
