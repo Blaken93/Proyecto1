@@ -67,6 +67,7 @@ Partial Class Registro
         Me.tbVerificarContraseña.Location = New System.Drawing.Point(235, 420)
         Me.tbVerificarContraseña.Multiline = True
         Me.tbVerificarContraseña.Name = "tbVerificarContraseña"
+        Me.tbVerificarContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbVerificarContraseña.Size = New System.Drawing.Size(241, 25)
         Me.tbVerificarContraseña.TabIndex = 29
         '
@@ -75,6 +76,7 @@ Partial Class Registro
         Me.tbContraseña.Location = New System.Drawing.Point(236, 357)
         Me.tbContraseña.Multiline = True
         Me.tbContraseña.Name = "tbContraseña"
+        Me.tbContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.tbContraseña.Size = New System.Drawing.Size(240, 25)
         Me.tbContraseña.TabIndex = 28
         '
