@@ -16,8 +16,6 @@ Public Class login
         Catch ex As Exception
             MessageBox.Show("Error al conectar con el servidor")
         End Try
-
-
     End Sub
 
     Private Function validarUsuario(email As String,

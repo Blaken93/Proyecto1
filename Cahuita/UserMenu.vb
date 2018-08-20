@@ -1,6 +1,5 @@
 ﻿Public Class UserMenu
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        MessageBox.Show(login.usuario)
         If login.rol = 1 Then
             mostrarMenuEmpleado()
         ElseIf login.rol = 2 Then
