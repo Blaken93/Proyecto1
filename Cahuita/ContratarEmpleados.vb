@@ -17,6 +17,7 @@
         Else
             actualizarEstado(dgvCandidatos.Item(0, i).Value)
             MessageBox.Show("Se ha contratado el candidato: " + dgvCandidatos.Item(1, i).Value)
+            correo.CorreoNuevoEmpleado(dgvCandidatos.Item(3, i).Value)
             cargarDatos()
         End If
 
@@ -26,7 +27,7 @@
         cargarDatos()
     End Sub
 
-    Private Function cargarDatos()
+    Private Sub cargarDatos()
         'Define conectividad a base de datos
         conexion.ConnectionString = servidor_datos
         conexion.Open()
@@ -40,10 +41,10 @@
         adaptador.Fill(set_de_datos, "Candidatos")
         dgvCandidatos.DataSource = set_de_datos.Tables("Candidatos")
         conexion.Close()
-    End Function
+    End Sub
 
 
-    Private Function actualizarEstado(id As String)
+    Private Sub actualizarEstado(id As String)
         conexion.ConnectionString = servidor_datos
         Dim instruccionSQL As String
         instruccionSQL = "Update CANDIDATOS SET ESTADO='1?' WHERE ID=2?"
@@ -53,5 +54,5 @@
         conexion.Open()
         comando.ExecuteNonQuery()
         conexion.Close()
-    End Function
+    End Sub
 End Class

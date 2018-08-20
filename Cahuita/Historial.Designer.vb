@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Historial
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,19 @@ Partial Class Historial
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.lblHistorial = New System.Windows.Forms.Label()
-        Me.clbHistorial = New System.Windows.Forms.CheckedListBox()
+        Me.dtgComentarios = New System.Windows.Forms.DataGridView()
+        CType(Me.dtgComentarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancelar
         '
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnCancelar.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(96, 335)
+        Me.btnCancelar.Location = New System.Drawing.Point(350, 394)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 27)
         Me.btnCancelar.TabIndex = 6
@@ -48,29 +49,35 @@ Partial Class Historial
         Me.lblHistorial.TabIndex = 5
         Me.lblHistorial.Text = "Historial:"
         '
-        'clbHistorial
+        'dtgComentarios
         '
-        Me.clbHistorial.FormattingEnabled = True
-        Me.clbHistorial.Location = New System.Drawing.Point(96, 60)
-        Me.clbHistorial.Name = "clbHistorial"
-        Me.clbHistorial.Size = New System.Drawing.Size(487, 259)
-        Me.clbHistorial.TabIndex = 8
+        Me.dtgComentarios.AllowUserToAddRows = False
+        Me.dtgComentarios.AllowUserToDeleteRows = False
+        Me.dtgComentarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgComentarios.Location = New System.Drawing.Point(31, 53)
+        Me.dtgComentarios.MultiSelect = False
+        Me.dtgComentarios.Name = "dtgComentarios"
+        Me.dtgComentarios.ReadOnly = True
+        Me.dtgComentarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgComentarios.Size = New System.Drawing.Size(696, 308)
+        Me.dtgComentarios.TabIndex = 21
         '
         'Historial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.clbHistorial)
+        Me.Controls.Add(Me.dtgComentarios)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.lblHistorial)
         Me.Name = "Historial"
         Me.Text = "Mi historial"
+        CType(Me.dtgComentarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnCancelar As Button
     Friend WithEvents lblHistorial As Label
-    Friend WithEvents clbHistorial As CheckedListBox
+    Friend WithEvents dtgComentarios As DataGridView
 End Class

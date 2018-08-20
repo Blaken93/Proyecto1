@@ -2,6 +2,7 @@
 
 Public Class login
     Public usuario As String
+    Public rol As Integer
 
     Private Sub BtnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Try
@@ -31,6 +32,8 @@ Public Class login
         Dim myReader As SqlDataReader = myCommand.ExecuteReader()
         Try
             While myReader.Read()
+                usuario = myReader("correo")
+                rol = myReader("tipo")
                 Return True
             End While
         Finally

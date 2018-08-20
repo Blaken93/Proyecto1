@@ -23,34 +23,29 @@ Partial Class MinutasDeSeguimiento
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblMinutasDeSeguimiento = New System.Windows.Forms.Label()
-        Me.tbMinutas = New System.Windows.Forms.TextBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.dtgComentarios = New System.Windows.Forms.DataGridView()
+        Me.dtgCandidatos = New System.Windows.Forms.DataGridView()
+        CType(Me.dtgComentarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgCandidatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblMinutasDeSeguimiento
         '
         Me.lblMinutasDeSeguimiento.AutoSize = True
-        Me.lblMinutasDeSeguimiento.Font = New System.Drawing.Font("Arial Rounded MT Bold", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMinutasDeSeguimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMinutasDeSeguimiento.Location = New System.Drawing.Point(13, 13)
         Me.lblMinutasDeSeguimiento.Name = "lblMinutasDeSeguimiento"
-        Me.lblMinutasDeSeguimiento.Size = New System.Drawing.Size(231, 22)
+        Me.lblMinutasDeSeguimiento.Size = New System.Drawing.Size(215, 24)
         Me.lblMinutasDeSeguimiento.TabIndex = 0
         Me.lblMinutasDeSeguimiento.Text = "Minutas de seguimiento:"
-        '
-        'tbMinutas
-        '
-        Me.tbMinutas.Location = New System.Drawing.Point(116, 49)
-        Me.tbMinutas.Multiline = True
-        Me.tbMinutas.Name = "tbMinutas"
-        Me.tbMinutas.Size = New System.Drawing.Size(529, 263)
-        Me.tbMinutas.TabIndex = 1
         '
         'btnCancelar
         '
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnCancelar.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(116, 333)
+        Me.btnCancelar.Location = New System.Drawing.Point(291, 497)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 27)
         Me.btnCancelar.TabIndex = 11
@@ -61,31 +56,61 @@ Partial Class MinutasDeSeguimiento
         '
         Me.btnGuardar.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.btnGuardar.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.Location = New System.Drawing.Point(214, 333)
+        Me.btnGuardar.Location = New System.Drawing.Point(389, 497)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(93, 27)
         Me.btnGuardar.TabIndex = 10
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
-        'Form1
+        'dtgComentarios
+        '
+        Me.dtgComentarios.AllowUserToAddRows = False
+        Me.dtgComentarios.AllowUserToDeleteRows = False
+        Me.dtgComentarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgComentarios.Location = New System.Drawing.Point(619, 49)
+        Me.dtgComentarios.MultiSelect = False
+        Me.dtgComentarios.Name = "dtgComentarios"
+        Me.dtgComentarios.ReadOnly = True
+        Me.dtgComentarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgComentarios.Size = New System.Drawing.Size(338, 413)
+        Me.dtgComentarios.TabIndex = 20
+        '
+        'dtgCandidatos
+        '
+        Me.dtgCandidatos.AllowUserToAddRows = False
+        Me.dtgCandidatos.AllowUserToDeleteRows = False
+        Me.dtgCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgCandidatos.Location = New System.Drawing.Point(39, 49)
+        Me.dtgCandidatos.MultiSelect = False
+        Me.dtgCandidatos.Name = "dtgCandidatos"
+        Me.dtgCandidatos.ReadOnly = True
+        Me.dtgCandidatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgCandidatos.Size = New System.Drawing.Size(500, 413)
+        Me.dtgCandidatos.TabIndex = 21
+        '
+        'MinutasDeSeguimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1106, 634)
+        Me.Controls.Add(Me.dtgCandidatos)
+        Me.Controls.Add(Me.dtgComentarios)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnGuardar)
-        Me.Controls.Add(Me.tbMinutas)
         Me.Controls.Add(Me.lblMinutasDeSeguimiento)
-        Me.Name = "Form1"
+        Me.Name = "MinutasDeSeguimiento"
         Me.Text = "Minutas de seguimiento"
+        CType(Me.dtgComentarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgCandidatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblMinutasDeSeguimiento As Label
-    Friend WithEvents tbMinutas As TextBox
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnGuardar As Button
+    Friend WithEvents dtgComentarios As DataGridView
+    Friend WithEvents dtgCandidatos As DataGridView
 End Class

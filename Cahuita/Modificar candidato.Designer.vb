@@ -41,6 +41,7 @@ Partial Class ModificarCandidato
         Me.btnAprobarCandidato = New System.Windows.Forms.Button()
         Me.btnRegistrarComentarios = New System.Windows.Forms.Button()
         Me.dgvCandidatos = New System.Windows.Forms.DataGridView()
+        Me.btnCrearCandidato = New System.Windows.Forms.Button()
         CType(Me.dgvCandidatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -226,11 +227,23 @@ Partial Class ModificarCandidato
         Me.dgvCandidatos.Size = New System.Drawing.Size(551, 378)
         Me.dgvCandidatos.TabIndex = 19
         '
+        'btnCrearCandidato
+        '
+        Me.btnCrearCandidato.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCrearCandidato.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCrearCandidato.Location = New System.Drawing.Point(536, 417)
+        Me.btnCrearCandidato.Name = "btnCrearCandidato"
+        Me.btnCrearCandidato.Size = New System.Drawing.Size(150, 31)
+        Me.btnCrearCandidato.TabIndex = 20
+        Me.btnCrearCandidato.Text = "Crear Candidato"
+        Me.btnCrearCandidato.UseVisualStyleBackColor = False
+        '
         'ModificarCandidato
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 512)
+        Me.Controls.Add(Me.btnCrearCandidato)
         Me.Controls.Add(Me.dgvCandidatos)
         Me.Controls.Add(Me.btnRegistrarComentarios)
         Me.Controls.Add(Me.btnAprobarCandidato)
@@ -277,4 +290,5 @@ Partial Class ModificarCandidato
     Friend WithEvents btnAprobarCandidato As Button
     Friend WithEvents btnRegistrarComentarios As Button
     Friend WithEvents dgvCandidatos As DataGridView
+    Friend WithEvents btnCrearCandidato As Button
 End Class
