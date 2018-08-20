@@ -8,7 +8,7 @@
         cargarDatos()
     End Sub
 
-    Private Function cargarDatos()
+    Private Sub cargarDatos()
         conexion.ConnectionString = servidor_datos
         conexion.Open()
         Dim instruccionSQL As String
@@ -26,7 +26,7 @@
         lblIDDatos.Text = datosUser("id")
         lblDireccionDatos.Text = datosUser("direccion")
         conexion.Close()
-    End Function
+    End Sub
 
 
 End Class

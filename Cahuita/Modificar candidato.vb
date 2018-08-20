@@ -19,11 +19,12 @@
 
     Private Sub btnAgendarEntrevista_Click(sender As Object, e As EventArgs) Handles btnAgendarEntrevista.Click
         'IR A LA BASE DE DATOS Y GUARDAR ESTA INFORMACION Y ENVIAR UN CORREO
-        MessageBox.Show("Se agendo la entrevista el dia " + DpAgendarEntrevista.Value.ToShortDateString)
 
-
-
-
+        If (tbID.Text = String.Empty) Then
+            MessageBox.Show("Debe de seleccionar un candidato para agendar una reunion")
+        Else
+            MessageBox.Show("Se agendo la entrevista el dia " + DpAgendarEntrevista.Value.ToShortDateString)
+        End If
         'SEND EMAIL
     End Sub
 
@@ -57,7 +58,7 @@
         tbEstado.Text = dgvCandidatos.Item(4, i).Value
     End Sub
 
-    Private Function cargarDatos()
+    Private Sub cargarDatos()
         'Define conectividad a base de datos
         conexion.ConnectionString = servidor_datos
         conexion.Open()
@@ -71,9 +72,9 @@
         adaptador.Fill(set_de_datos, "Candidatos")
         dgvCandidatos.DataSource = set_de_datos.Tables("Candidatos")
         conexion.Close()
-    End Function
+    End Sub
 
-    Private Function crearComentario()
+    Private Sub crearComentario()
         conexion.ConnectionString = servidor_datos
         Dim instruccionSQL As String
         instruccionSQL = "INSERT INTO COMENTARIOS (COMENTARIO, USUARIO) VALUES ('1?','2?')"
@@ -83,9 +84,9 @@
         conexion.Open()
         comando.ExecuteNonQuery()
         conexion.Close()
-    End Function
+    End Sub
 
-    Private Function actualizarEstado()
+    Private Sub actualizarEstado()
         conexion.ConnectionString = servidor_datos
         Dim instruccionSQL As String
         instruccionSQL = "Update CANDIDATOS SET ESTADO='1?' WHERE ID=2?"
@@ -95,5 +96,52 @@
         conexion.Open()
         comando.ExecuteNonQuery()
         conexion.Close()
+    End Sub
+
+    Private Sub btnCrearCandidato_Click(sender As Object, e As EventArgs) Handles btnCrearCandidato.Click
+        If validarCamposBlancos() Then
+            MessageBox.Show("Debe de llenar los campos necesarios (Nombre, Apellidos, Correo)")
+        Else
+            crearCandidato()
+            cargarDatos()
+        End If
+
+    End Sub
+
+    Private Sub crearCandidato()
+        conexion.ConnectionString = servidor_datos
+        Dim instruccionSQL As String
+        instruccionSQL = "INSERT INTO CANDIDATOS (NOMBRE,APELLIDOS,CORREO,ESTADO) VALUES ('1?','2?','3?','4?')"
+        instruccionSQL = instruccionSQL.Replace("1?", tbNombre.Text)
+        instruccionSQL = instruccionSQL.Replace("2?", tbApellidos.Text)
+        instruccionSQL = instruccionSQL.Replace("3?", tbCorreo.Text)
+        instruccionSQL = instruccionSQL.Replace("4?", 1) '1-NUEVO 2-APROBADO 3-CONTRATADO
+        Dim comando As New SqlClient.SqlCommand(instruccionSQL, conexion)
+        Try
+            conexion.Open()
+            comando.ExecuteNonQuery()
+            conexion.Close()
+            MessageBox.Show("Se ha creado el candidato")
+            correo.CorreoNuevoCandidato(tbCorreo.Text)
+
+            limpiarCampos()
+        Catch ex As Exception
+            conexion.Close()
+            MessageBox.Show("Ha habido un error al crear el candidato, por favor revise los datos ingresados")
+        End Try
+
+
+    End Sub
+
+    Private Function validarCamposBlancos()
+        Return tbApellidos.Text = String.Empty OrElse
+            tbCorreo.Text = String.Empty OrElse
+            tbNombre.Text = String.Empty
     End Function
+
+    Private Sub limpiarCampos()
+        tbApellidos.Text = String.Empty
+        tbCorreo.Text = String.Empty
+        tbNombre.Text = String.Empty
+    End Sub
 End Class

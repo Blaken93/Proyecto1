@@ -107,6 +107,7 @@
     <Compile Include="ContratarEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="correo.vb" />
     <Compile Include="MinutasDeSeguimiento.Designer.vb">
       <DependentUpon>MinutasDeSeguimiento.vb</DependentUpon>
     </Compile>
